@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1B1726;
+}
+
+img {
+  max-width: 100%;
+
+
+  transition: 0, 5s;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0, auto;
+}
+
+.header {
+  background-image: url(recurso1/bg.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 80px 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.Logo {
+  color: #FF5A2C;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 17px;
+  padding: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #FF5902
+}
+
+.carritoc {
+  display: none;
+}
+
+.navbar .botoncarrito {
+  display: none;
+}
+
+.carritoc li {
+  list-style: none;
+
+}
+
+.navbar i:hover>.carritocompras {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 5px;
+  background-color: #3F3465;
+  z-index: 999;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.navbar i:hover .carritoc {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px 0 10px;
+  border-bottom: solid thin black;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar i:hover .carritocompras>.botoncarrito {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 10px auto;
+  background-color: #FF5A2C;
+  border: solid thin #FF5A2C;
+  border-radius: 5px;
+  color: #E0E0E0;
+  cursor: pointer;
+}
+
+.navbar i:hover .carritocompras>.botoncarrito:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.carrito {
+  display: flex;
+  padding: 25px;
+  font-size: 17px;
+}
+
+#menu {
+  display: none;
+}
+
+.header-content {
+  display: flex;
+}
+
+.header-txt {
+  flex-basis: 50%
+}
+
+.header-txt h1 {
+  font-size: 60px;
+  color: #FFFFFF;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.header-txt span {
+  color: #FF5A2C;
+}
+
+.header-txt p {
+  font-size: 20px;
+  counter-reset: #E0E0E0;
+  margin-bottom: 45px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn-1,
+.btn-2,
+.btn-3 {
+  display: inline-block;
+  padding: 11px 35Px;
+  border: 2px solid #FF5A2C;
+  border-radius: 25px;
+  margin-right: 25px;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.btn-1:hover {
+  background-color: #FF5A2C;
+}
+
+.popular {
+  padding: 100px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 35px;
+  margin-bottom: 45;
+}
+
+.pupular-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pupular-content img {
+  width: 150px;
+}
+
+.product-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.product-1 {
+  background-color: #2A223A;
+}
+
+.product-txt {
+  padding: 50px 30px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 20 px;
+}
+
+.precio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.precio p {
+  font-size: 17px;
+  color: #FF5A2C;
+}
+
+.btn-2 {
+  padding: 5px 25px;
+  background-color: #FF5A2C;
+  margin-right: 0;
+}
+
+.contact {
+  padding: 150px 300px;
+}
+
+.contact-content {
+  background-color: #2A223A;
+  text-align: center;
+  padding: 50px;
+  border-radius: 50px;
+
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input {
+  padding: 18px 25px;
+  background-color: #3F3465;
+  border: 0;
+  border-radius: 25px;
+  margin-right: 10px;
+  color: #FFFFFF;
+  font-size: 17px;
+}
+
+::placeholder {
+  color: #E0E0E0;
+  font-size: 17px;
+}
+
+.btn-3 {
+  background-color: #FF5A2C;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.link ul {
+  display: flex;
+}
+
+.link ul li>a {
+  font-size: 17px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.link ul li>a:hover {
+  color: #FF5A2C;
+}
